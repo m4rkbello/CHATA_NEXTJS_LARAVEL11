@@ -1,0 +1,11 @@
+INSTALL LARAVEL11 PROJECT USING BREEZE 
+->composer create-project --prefer-dist laravel/laravel backend-laravel
+->composer self-update
+->composer self-update
+
+
+
+
+
+
+
