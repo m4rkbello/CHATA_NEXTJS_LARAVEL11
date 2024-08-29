@@ -1,11 +1,45 @@
-INSTALL LARAVEL11 PROJECT USING BREEZE 
-->composer create-project --prefer-dist laravel/laravel backend-laravel
-->composer self-update
-->composer self-update
+1. configure
+configure the error of php.ini 
+remove the ; of 
+;extension=fileinfo and 
+;extension=pdo_mysql
+
+2. INSTALL THIS 
+composer update --ignore-platform-req=ext-fileinfo
+
+3. CREATE A PROJECT 
+->composer create-project laravel/laravel backend-laravel
+4. ADD PACKAGE REVERB AND PUSHER 
+->composer require laravel/reverb pusher/pusher-php-server
+
+ADD THIS TO .env 
+BROADCAST_DRIVER=pusher
+PUSHER_APP_ID=your_app_id
+PUSHER_APP_KEY=your_app_key
+PUSHER_APP_SECRET=your_app_secret
+PUSHER_HOST=
+PUSHER_PORT=443
+PUSHER_SCHEME=https
+PUSHER_APP_CLUSTER=your_app_cluster 
+
+AND THEN in the config/broadcasting.php:
+ADD THE 
+'pusher' => [
+    'driver' => 'pusher',
+    'key' => env('PUSHER_APP_KEY'),
+    'secret' => env('PUSHER_APP_SECRET'),
+    'app_id' => env('PUSHER_APP_ID'),
+    'options' => [
+        'cluster' => env('PUSHER_APP_CLUSTER'),
+        'useTLS' => true,
+    ],
+],
+
+4. CREATE A BROADCAST EVENT 
+->php artisan make:event NewMessage
 
 
+5. CREATE A CONTROLLER FOR AND ROUTES 
+->php artisan make:controller EventController --api
 
-
-
-
-
+6. 
