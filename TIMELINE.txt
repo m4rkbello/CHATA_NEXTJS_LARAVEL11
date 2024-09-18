@@ -42,4 +42,5 @@ ADD THE
 5. CREATE A CONTROLLER FOR AND ROUTES 
 ->php artisan make:controller EventController --api
 
-6. 
+6. Setting Up React.js/Next.js
+->npx create-next-app@latest my-next-app
