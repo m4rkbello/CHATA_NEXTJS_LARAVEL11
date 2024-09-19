@@ -55,4 +55,7 @@ ADD THE
 10. INSTALL USAB TANANG FRONTEND 
 ->npm install pusher-js
 ->npm install axios zustand @pusher/pusher-js shadcn-ui @radix-ui/react-slot
-npm config set registry https://registry.npmjs.org/
+->npm config set registry https://registry.npmjs.org/
+->npx shadcn-ui init
+->npm install -D tailwindcss postcss autoprefixer
+->npx tailwindcss init -p
