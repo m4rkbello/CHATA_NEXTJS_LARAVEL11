@@ -52,3 +52,7 @@ ADD THE
 ->npx shadcn@latest init
 ->npm install axios @types/axios
 
+10. INSTALL USAB TANANG FRONTEND 
+->npm install pusher-js
+->npm install axios zustand @pusher/pusher-js shadcn-ui @radix-ui/react-slot
+npm config set registry https://registry.npmjs.org/
