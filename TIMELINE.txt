@@ -43,4 +43,12 @@ ADD THE
 ->php artisan make:controller EventController --api
 
 6. Setting Up React.js/Next.js
-->npx create-next-app@latest my-next-app
+->npx create-next-app@latest frontend-nextjs
+
+7. INSTALL AXIOS FOR HTTP REQUEST/RESPONSE 
+->npm install axios
+
+8. INSTALL SHADCN as Shadcn UI is a customizable component library for building modern web apps with React and Tailwind CSS
+->npx shadcn@latest init
+->npm install axios @types/axios
+
