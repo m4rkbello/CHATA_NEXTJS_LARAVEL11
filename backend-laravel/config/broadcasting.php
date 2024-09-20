@@ -8,13 +8,23 @@ return [
 
         'pusher' => [
             'driver' => 'pusher',
-            'key' => env('2ff698da650ee6a10d84'),
-            'secret' => env('178877667d60c9a55ea4'),
-            'app_id' => env('1857216'),
+            'key' => env('PUSHER_APP_KEY'),
+            'secret' => env('PUSHER_APP_SECRET'),
+            'app_id' => env('PUSHER_APP_ID'),
             'options' => [
-                'cluster' => env('ap1'),
+                'cluster' => env('PUSHER_APP_CLUSTER'),
                 'useTLS' => true,
             ],
+        ],
+    
+        'reverb' => [
+            'driver' => 'reverb',
+            'key' => env('REVERB_APP_KEY'),
+            'secret' => env('REVERB_APP_SECRET'),
+            'app_id' => env('REVERB_APP_ID'),
+            'host' => env('REVERB_HOST', 'localhost'),
+            'port' => env('REVERB_PORT', 8080),
+            'scheme' => env('REVERB_SCHEME', 'http'),
         ],
 
         'ably' => [
