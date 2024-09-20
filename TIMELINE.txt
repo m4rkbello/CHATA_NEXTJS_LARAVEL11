@@ -95,9 +95,7 @@ add the
 
 ADD Run this command to generate an event class:
 
-13. INSTALL WEBSOCKET-PHP 
-->composer require beyondcode/laravel-websockets
-->php artisan vendor:publish --provider="BeyondCode\LaravelWebSockets\WebSocketsServiceProvider" --tag="config"
-
+13. ADD 
+->npm install pusher-js laravel-echo
 
 
